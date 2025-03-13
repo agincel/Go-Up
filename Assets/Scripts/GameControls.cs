@@ -89,6 +89,17 @@ public partial class @GameControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""598e7387-b323-40de-8620-11b5a8c756ee"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""5e993c26-eeed-4230-b9f9-1bd56843dc76"",
                     ""path"": ""<Gamepad>/leftStick/x"",
                     ""interactions"": """",

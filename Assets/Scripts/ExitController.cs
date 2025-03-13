@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class ExitController : MonoBehaviour {
 
     protected TimerController tc;
-    protected GameObject timerObj;
 
     GameControls gameControl;
     float timeSinceRoomLoad = 0;
@@ -15,9 +14,12 @@ public class ExitController : MonoBehaviour {
     {
         gameControl = new GameControls();
         gameControl.Gameplay.Enable();
-		timerObj = GameObject.Find("Timer");
-        Destroy(timerObj);
-    }
+		GameObject[] timers = GameObject.FindGameObjectsWithTag("Timer");
+		foreach (GameObject g in timers)
+		{
+		    GameObject.Destroy(g);
+		}
+	}
 
     // Update is called once per frame
     void Update () {

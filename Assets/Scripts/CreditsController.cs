@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CreditsController : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
+public class CreditsController : MonoBehaviour
+{
+    float sceneTime = 0;
+    GameControls gameControl;
+	private void Start()
+	{
+		gameControl = new GameControls();
+		gameControl.Gameplay.Enable();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButtonDown("Menu"))
-        {
-            SceneManager.LoadScene("Start");
-        }
+        sceneTime += Time.deltaTime;
 
-        if (Input.GetButtonDown("Jump"))
+        if (sceneTime > 0.1f && gameControl.Gameplay.Jump.WasPressedThisFrame())
         {
             SceneManager.LoadScene("Start");
         }

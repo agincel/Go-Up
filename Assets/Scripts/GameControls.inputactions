@@ -1,5 +1,5 @@
 {
-    "name": "Controls",
+    "name": "GameControls",
     "maps": [
         {
             "name": "Gameplay",
@@ -58,6 +58,17 @@
                     "name": "",
                     "id": "c826efd1-feba-45fc-a714-2d537e17cac0",
                     "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "598e7387-b323-40de-8620-11b5a8c756ee",
+                    "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
