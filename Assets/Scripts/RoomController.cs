@@ -13,7 +13,7 @@ public class RoomController : MonoBehaviour {
     private StatsController birbStats;
 
     [Header("References")]
-    public Text countText;
+    public TMPro.TextMeshProUGUI countText;
 
     GameControls gameControl;
 
